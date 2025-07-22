@@ -1,0 +1,55 @@
+#rotate{
+    height: 200px;
+    width: 200px;
+    
+    margin: 200px;
+
+    /* translate: (100px, 50px); */
+    /* transform: rotate(20deg); */
+    /* transform: scale(2,4); */
+    /* transform: skewY(20deg); */
+
+    /* transform:scale(2) rotate(20deg) skew(10deg) translate(50px, 50px); */
+
+    background-color: blue;
+    /* transition-property: background-color;
+    transition-duration: 5s;
+    transition-delay: 2s;
+    transition-timing-function: ease-in; */
+
+    /* transition: background-color 5s ease 2s; */
+    /* transition: width 2s ease 0ms, background-color 2s ease 0s; */
+    /* transition: height 2s ease-out 0ms; */
+
+    
+}
+
+#rotate:hover{
+    /* background-color: blue;
+    width: 500px; */
+    /* height: 500px; */
+
+    animation-name: widthandheigth;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-direction:alternate;
+    
+}
+
+@keyframes widthandheigth {
+    0%{
+        background-color: blue;
+        width: 100px;
+    }
+
+    50%{
+        background-color: black;
+        width: 250px;
+    }
+
+    100%{
+        background-color: red;
+        width: 500px;
+    }
+}

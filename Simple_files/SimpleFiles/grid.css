@@ -1,0 +1,58 @@
+#parent{
+    background-color: rgb(204, 243, 243);
+    width: 600px;
+    border: 1px solid black;
+    padding: 15px;
+
+    display: grid;
+    
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+}
+
+.header{  
+    border: 1px solid black;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.footer{
+    text-align: center;
+    border: 1px solid black;
+    background-color: aqua;
+}
+
+.middle{
+    display: grid;
+
+    grid-template-columns: 1fr 3fr 2fr;
+
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(160, 190, 190);
+}
+
+.menu{
+    font-size: small;
+    border: 1px solid black;
+    background-color: rgb(160, 190, 190);
+}
+
+.ads{
+    font-size: small;
+    border: 1px solid black;
+    background-color: rgb(86, 182, 182);
+    padding: 15px;
+}
+
+.content{
+    font-size: small;
+    border: 1px solid black;
+    background-color: rgb(155, 227, 227);
+    text-align: center;
+    padding: 10px;
+}
+
+
+

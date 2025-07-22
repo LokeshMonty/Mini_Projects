@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .imp{
+            color: red;
+        }
+
+        p[class]{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            font-variant: small-caps;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <label>Email:</label>
+        <input type="email" name="email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Submit"><br><br>
+
+        <label for="Gender">Gender:</label>
+        <input type="radio" name="Gender" value="Male">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" value="Female">
+        <label for="Female">Female</label>
+        <button type="button">Click me</button><br>
+
+        <p>If the browser dosnt support <span class="imp">the video tag then</span> this line will display.</p>
+        <p class="class">This is new paragraph</p>
+        <label for="pets">Pets:</label>
+        <select id="pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select>
+    </form><br><br>
+
+    <form action="/search" method="get">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <video src="Java.mp4" width="300" height="200" controls preload="none">
+        If the browser dosnt support the video tag then this line will display.
+    </video>
+
+    <!-- Fallback statargy -->
+    <video width="300" height="200" muted controls>
+        <source src="Java.mp4" type="video/mp4">
+        <source src="Java.ogg" type="video/ogg">
+        Your browser dosnt support the video tag.
+    </video>
+    <p>Download the video
+        <a href="Java.mp4">here </a>
+    </p>
+    <br>
+
+    <audio controls>
+        <source src="song.mp3" type="audio/mp3">
+        <source src="song.ogg" type="audio/ogg">
+        Your browser dosnt support the video tag.  
+    </audio>
+
+    <br>
+    <img src="photo.jpg" alt="Group photo" title="frends" loading="lazy" width="300" height="200">
+</body>
+</html>
